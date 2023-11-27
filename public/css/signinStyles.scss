@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    // background: linear-gradient(45deg, #6A0DAD, #D8BFD8, #DDA0DD,  #8F00FF);
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: url('../images/fondoSchool.jpeg');
+}
+
+/*.container-left{
+    background-image: url('../images/GHOST02.png');
+    background-image: url('../images/fondoAlternativo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 650px;
+    height: 650px;
+}*/
+
+.container-right{
+    background-color: #FFFFFF;
+    // background: transparent;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    .logo{
+        width: 120px;
+        align-self: center;
+        margin-bottom: 18px;
+    }
+}
