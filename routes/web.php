@@ -22,7 +22,7 @@ use App\Http\Controllers\AsistenciaController;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
 /*
 Route::get('/trabajadores', [ConsultasController::class, 'listarTrabajador'])->name('listar-trabajadores');

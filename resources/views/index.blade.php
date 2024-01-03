@@ -59,7 +59,7 @@
 
                 <video id="camara" width="640" height="480" autoplay style="display: none;"></video>
                 <canvas id="foto" width="640" height="480" style="display: none;"></canvas>
-                <img id="imagenMostrada" style="display:none;" width="640" height="480" />
+                {{-- <img id="imagenMostrada" style="display:none;" width="640" height="480" /> --}}
                 
                 <div class="d-flex justify-content-evenly w-100">
                     <button class="btn btn-outline-primary" name="marcar" value="entrada">ENTRADA</button>
