@@ -31,6 +31,7 @@ Route::get('/home', [ConsultasController::class, 'listarAsistencia'])->name('hom
 Route::get('/info', [ConsultasController::class, 'mostrarInfo'])->name('info');
 */
 Route::get('/signin', [LoginController::class, 'loginView'])->name('login');
+Route::get('/signup', [RegistroController::class, 'registerView'])->name('signup');
 
 //Consulta filtro
 Route::post('search', [ConsultasController::class,'search'])->name('search');
@@ -64,6 +65,7 @@ Route::get('/generar-pdf-asistencia', [ReportController::class, 'generarReporteA
 Route::post('/validar-registro', [LoginController::class, 'register'])->name('validar-registro');
 Route::post('/inicia-sesion', [LoginController::class, 'login'])->name('inicia-sesion');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout'); 
+Route::post('/registrar-usuario', [LoginController::class, 'signupUser'])->name('signup-user');
 
 // Rutas que requieren autenticación
 Route::middleware(['auth'])->group(function () {

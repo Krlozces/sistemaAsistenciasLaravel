@@ -28,4 +28,8 @@ class RegistroController extends Controller
         Cargo::create($incomingFields);
         return redirect('/cargos')->with('success','¡Registro exitoso!');
     }
+
+    public function registerView(){
+        return view("signup");
+    }
 }

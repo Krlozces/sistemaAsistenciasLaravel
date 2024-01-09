@@ -55,4 +55,23 @@ class LoginController extends Controller
 
         return redirect(route('index'));
     }
+
+    public function signupUser(Request $request){
+        $request->validate([
+            'name' => ["required", "regex: /^[a-zA-Z]+$/"],
+            'email' => ["required", "email"],
+            'password' => ["required", "regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/"]
+        ]);
+
+        $user = new User();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->password);
+
+        $user->save();
+
+        Auth::login($user);
+
+        return redirect(route('login'));
+    }
 }

@@ -34,6 +34,9 @@
                     <input type="checkbox" name="remember" id="remember">
                     <label for="remember" class="form-label">Recuerdame</label>
                 </div>
+                <div class="mb-3">
+                    <a href="{{ route('signup') }}">Registrarse</a>
+                </div>
                 <div class="mb-3 d-flex justify-content-center">
                     <button type="submit" class="btn rounded border btn-outline-primary">Iniciar Sesión</button>
                 </div>
